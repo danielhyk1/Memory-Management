@@ -1,0 +1,8 @@
+# Memory Management
+Implemented some key standard library features needed for user processes in WeensyOS in the kernel.c, k-loader.c, kernel.h, malloc.c files
+
+1. A heap-management system for the kernel: 
+  brk()/sbrk() system calls
+  Optimistic/Lazy memory allocation (a.k.a overcommit)
+2. A user-space memory allocation library for WeensyOS:  
+  Implement the standard C API for heap allocation, i.e. malloc(), calloc(), realloc(), and free(). Additionally also implemented two new APIs : defrag() and heap_info().
